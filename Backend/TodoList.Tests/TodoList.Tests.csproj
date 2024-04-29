@@ -18,9 +18,6 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\TodoList.Api\TodoList.Api.csproj" />
-  </ItemGroup>
+  
 
 </Project>
