@@ -9,6 +9,7 @@
     <Content Remove="Services\**" />
     <EmbeddedResource Remove="Services\**" />
     <None Remove="Services\**" />
+    <Compile Remove="Startup.cs" />
   </ItemGroup>
 
   <ItemGroup>
