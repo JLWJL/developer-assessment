@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Api", "TodoList.Api\TodoList.Api.csproj", "{065CE954-2618-4A24-A613-9C336C2154C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoList.Host", "TodoList.Host\TodoList.Host.csproj", "{065CE954-2618-4A24-A613-9C336C2154C6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "TodoList.DataAccess\DataAccess.csproj", "{BCC36FBD-0EC9-42A4-ADA7-4C5CC144E90E}"
 EndProject
@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Domain", "TodoList
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Tests", "TodoList.Tests\TodoList.Tests.csproj", "{5F3BCAE8-9D88-4A2C-9BA6-5DAC51932A91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Host", "TodoList.Host\TodoList.Host.csproj", "{D15CAFDF-4257-4809-850B-A90B6D374AD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.Api", "TodoList.Api\TodoList.Api.csproj", "{D15CAFDF-4257-4809-850B-A90B6D374AD7}"
 EndProject
 
 Global
