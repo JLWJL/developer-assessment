@@ -8,7 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\TodoList.DataAccess\DataAccess.csproj" />
+      <ProjectReference Include="..\TodoList.DataAccess\TodoList.Infrastructure.csproj" />
     </ItemGroup>
     
 </Project>
