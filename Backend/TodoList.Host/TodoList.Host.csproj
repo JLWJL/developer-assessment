@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TodoList.DataAccess\TodoList.Infrastructure.csproj" />
     <ProjectReference Include="..\TodoList.Api\TodoList.Api.csproj" />
+    <ProjectReference Include="..\TodoList.Infrastructure\TodoList.Infrastructure.csproj" />
   </ItemGroup>
 </Project>
