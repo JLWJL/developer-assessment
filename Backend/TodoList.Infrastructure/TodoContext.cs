@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using TodoList.Domain;
 
-namespace TodoList.Api
+namespace TodoList.Infrastructure
 {
     public class TodoContext : DbContext
     {
@@ -9,6 +10,6 @@ namespace TodoList.Api
         {
         }
 
-        public DbSet<TodoItem> TodoItems { get; set; }
+        public virtual DbSet<TodoItem> TodoItems { get; set; }
     }
 }
