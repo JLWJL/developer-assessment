@@ -1,5 +1,5 @@
 import './App.css'
-import { Image, Alert, Button, Container, Row, Col, Table } from 'react-bootstrap'
+import { Image, Alert, Container, Row, Col } from 'react-bootstrap'
 import React, { useState, useEffect } from 'react'
 import api from './http/todo-api'
 import { AddTodo } from './components/add-todo/AddTodo'
@@ -9,19 +9,34 @@ const App = () => {
   const [items, setItems] = useState([])
 
   const getTodos = async () => {
-    const todos = await api.getAll();
-    setItems(todos);
+    try {
+      const todos = await api.getAll();
+      setItems(todos);
+    }
+    catch (err) {
+      alert(err)
+    }
   }
 
   const addTodo = async (newTodo) => {
-    const addedTodo = await api.post(newTodo);
-    setItems([...items, addedTodo]);
+    try {
+      const addedTodo = await api.post(newTodo);
+      setItems([...items, addedTodo]);
+    }
+    catch (err) {
+      alert(err)
+    }
   }
 
   const toggleComplete = async (item) => {
-    const updated = await api.put(item.id, { ...item, isCompleted: !item.isCompleted });
-    const todos = items.map(item => item.id === updated.id ? { ...updated } : item);
-    setItems(todos);
+    try {
+      const updated = await api.put(item.id, { ...item, isCompleted: !item.isCompleted });
+      const todos = items.map(item => item.id === updated.id ? { ...updated } : item);
+      setItems(todos);
+    }
+    catch (err) {
+      alert(err)
+    }
   }
 
   useEffect(() => {

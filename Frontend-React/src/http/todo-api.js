@@ -23,6 +23,24 @@ const put = async (id, data) => {
   return response.data;
 };
 
+http.interceptors.response.use(
+  response => {
+    return response;
+  },
+  error => {
+    if (error.response) {
+      console.error(`${error.response}`);
+      return Promise.reject(error.response.data)
+    } else if (error.request) {
+      console.error(`${error.request}`);
+      return Promise.reject(error.request.data)
+    } else {
+      console.error('Error message:', error.message);
+      return Promise.reject(error.message)
+    }
+  }
+);
+
 export default {
   get,
   getAll,
